@@ -1,0 +1,191 @@
+.p {
+    color: aliceblue;
+}
+
+.dark-mode {
+    background-color: #111;
+    color: white;
+}
+
+.button {
+    background-color: grey;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.title {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align: center;
+    border-radius: 2px;
+    border-width: 2px;
+    border-color: black;
+    border-style: double;
+    font-size: 60px;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+    margin-left: 650px;
+    margin-top: 22px;
+
+    width: 250px;
+    height: 100px;
+    align-items: center;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    border-right: none;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #111;
+}
+
+.music {
+    font-size: large;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.music-left {
+    font-size: large;
+    text-align: left;
+}
+
+
+.dark-mode {
+    background-color: #111;
+    color: white;
+}
+
+.song {
+    text-decoration: underline;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "Song1 Song2 Song3"
+        "Song4 Song5 Song6"
+        ". . .";
+    width: 312px;
+    height: 320px;
+    margin-right: 30%;
+    margin-left: 20%;
+}
+
+.Song1 {
+    grid-area: Song1;
+
+}
+
+.Song2 {
+    grid-area: Song2;
+}
+
+.Song3 {
+    grid-area: Song3;
+}
+
+.Song4 {
+    grid-area: Song4;
+}
+
+.Song5 {
+    grid-area: Song5;
+}
+
+.Song6 {
+    grid-area: Song6;
+}
