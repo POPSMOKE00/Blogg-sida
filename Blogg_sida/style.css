@@ -1,3 +1,16 @@
+@media screen and (max-width: 600px) {
+    /* Styles for screens with a maximum width of 600px */
+    /* Adjust layout, font sizes, etc. as needed */
+}
+
+@media screen and (max-width: 768px) {
+    /* Styles for screens with a maximum width of 768px */
+    /* Adjust layout, font sizes, etc. as needed */
+}
+
+/* Add more media queries for different screen sizes as required */
+
+
 .p {
     color: aliceblue;
 }
@@ -32,9 +45,8 @@
     -moz-animation: fadeIn 5s;
     -o-animation: fadeIn 5s;
     -ms-animation: fadeIn 5s;
-    margin-left: 650px;
-    margin-top: 22px;
-
+    margin-left: 45%;
+    margin-top: 2%;
     width: 250px;
     height: 100px;
     align-items: center;
@@ -90,16 +102,16 @@
     }
 }
 
-ul {
-    list-style-type: none;
+nav {
+    list-style-type: initial;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow: inherit;
     background-color: #333;
 }
 
 li {
-    float: left;
+
     border-right: none;
 }
 
@@ -139,53 +151,202 @@ li a:hover:not(.active) {
 .dark-mode {
     background-color: #111;
     color: white;
+
 }
 
-.song {
-    text-decoration: underline;
+
+
+
+
+
+.grid-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+
+
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1px;
+    margin-left: 25%;
+    height: 50%;
+    width: 50%;
+
+
+
+}
+
+fieldset {
+    border: 1px;
+
+}
+
+.legend {
     align-items: center;
-    text-align: center;
+}
+
+a {
+    color: cornflowerblue;
 
 }
 
+.buttons {
+    float: inline-end;
+    color: wheat;
+}
+
+.fotboll {
+    background-color: #ffd700;
+    /* Guld */
+}
+
+.musik {
+    background-color: #00bfff;
+    /* Ljusblå */
+}
+
+.lag {
+    background-color: #ff4500;
+    /* Orangeröd */
+}
+
+.skola {
+    background-color: pink;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    margin-left: 25%;
+    margin-top: 5%;
+    height: 50%;
+    width: 50%;
+}
+
+.short {
+    text-align: center;
+}
+
+.BFF {
+    padding-left: 9%;
+}
+
+.ME {
+    text-align: center;
+}
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 20px 20px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "Song1 Song2 Song3"
-        "Song4 Song5 Song6"
-        ". . .";
-    width: 312px;
-    height: 320px;
-    margin-right: 30%;
-    margin-left: 20%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.Song1 {
-    grid-area: Song1;
-
+.bloggpost {
+    background-color: #e2e2e2;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
 }
 
-.Song2 {
-    grid-area: Song2;
+.titel {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
-.Song3 {
-    grid-area: Song3;
+.datum {
+    color: #802e2e;
+    font-style: italic;
+    margin-bottom: 10px;
 }
 
-.Song4 {
-    grid-area: Song4;
+.innehall {
+    margin-top: 10px;
 }
 
-.Song5 {
-    grid-area: Song5;
+.innehall p {
+    line-height: 1.5;
 }
 
-.Song6 {
-    grid-area: Song6;
+img {
+
+    display: block;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.fik-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+
+.fik-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fik-text {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.fik-bild {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.fik-beskrivning {
+    color: #888;
+    font-style: italic;
+}
+
+.kontakt-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.kontakt-email {
+    color: #888;
+    font-style: italic;
 }
