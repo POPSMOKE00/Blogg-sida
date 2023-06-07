@@ -16,3 +16,4 @@ function myFunction() {
     }
     console.log(modeButton.src)
 }
+// HEJ
